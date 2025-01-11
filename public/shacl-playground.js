@@ -19,6 +19,8 @@ import State from './lib/State.js'
 import { TreeView, TreeViewNode } from './lib/TreeView.js'
 import ValidationSettings from './lib/ValidationSettings.js'
 
+document.getElementById('version').innerHTML = `${__APP_NAME__} version: ${__APP_VERSION__}`
+
 const reportPrefixes = new Map([
   ['sh', ns.sh('')],
   ['shn', ns.shn('')]
