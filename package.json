@@ -6,7 +6,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "vite build --base=./ --outDir=../dist public",
+    "build": "vite --config vite.config.js build --base=./ --outDir=../dist public",
     "dev": "vite",
     "test": "stricter-standard"
   },
