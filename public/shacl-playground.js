@@ -1,3 +1,4 @@
+import { documentStyle } from 'bs-elements'
 import { html, render } from 'lit'
 import { compressToBase64, decompressFromBase64 } from 'lz-string'
 import RdfEditor from 'rdf-elements/RdfEditor.js'
@@ -19,7 +20,9 @@ import State from './lib/State.js'
 import { TreeView, TreeViewNode } from './lib/TreeView.js'
 import ValidationSettings from './lib/ValidationSettings.js'
 
-document.getElementById('version').innerHTML = `${__APP_NAME__} version: ${__APP_VERSION__}`
+document.getElementById('version').innerHTML = `${__APP_NAME__} version: ${__APP_VERSION__}` // eslint-disable-line no-undef
+
+documentStyle()
 
 const reportPrefixes = new Map([
   ['sh', ns.sh('')],
