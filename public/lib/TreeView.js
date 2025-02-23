@@ -4,7 +4,7 @@ import style from './style.js'
 class TreeView extends LitElement {
   static get styles () {
     return [
-      style(),
+      style,
       css`
         ul {
           padding-left: 1em;
@@ -36,7 +36,7 @@ class TreeViewNode extends LitElement {
 
   static get styles () {
     return [
-      style(),
+      style,
       css`
         li::marker {
           content: "";

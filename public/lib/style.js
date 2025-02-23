@@ -1,3 +1,5 @@
-import style from 'rdf-elements/src/style.js'
+import { bootstrap } from 'bs-elements'
+
+const { style } = bootstrap()
 
 export default style
