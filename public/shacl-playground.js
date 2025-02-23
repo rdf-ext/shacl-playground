@@ -20,7 +20,7 @@ import State from './lib/State.js'
 import { TreeView, TreeViewNode } from './lib/TreeView.js'
 import ValidationSettings from './lib/ValidationSettings.js'
 
-document.getElementById('version').innerHTML = `${__APP_NAME__} version: ${__APP_VERSION__}`
+document.getElementById('version').innerHTML = `${__APP_NAME__} version: ${__APP_VERSION__}` // eslint-disable-line no-undef
 
 documentStyle()
 
