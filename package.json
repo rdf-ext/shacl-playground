@@ -1,6 +1,6 @@
 {
   "name": "shacl-playground",
-  "version": "0.1.13",
+  "version": "1.0.0-alpha.0",
   "private": true,
   "description": "SHACL Playground based on shacl-engine",
   "type": "module",
