@@ -34,6 +34,6 @@
     "rdf-ext": "^2.5.2",
     "shacl-engine": "^1.0.2",
     "stricter-standard": "^0.3.1",
-    "vite": "^6.3.3"
+    "vite": "^6.3.4"
   }
 }
