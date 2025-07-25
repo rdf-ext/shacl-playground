@@ -28,7 +28,7 @@
   "homepage": "https://github.com/rdf-ext/shacl-playground",
   "devDependencies": {
     "bs-elements": "^0.1.1",
-    "lit": "^3.3.0",
+    "lit": "^3.3.1",
     "lz-string": "^1.5.0",
     "rdf-elements": "^0.1.4",
     "rdf-ext": "^2.5.2",
