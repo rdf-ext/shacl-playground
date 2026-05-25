@@ -6,8 +6,8 @@ import RdfFormatSelector from 'rdf-elements/RdfFormatSelector.js'
 import RdfNetwork from 'rdf-elements/RdfNetwork.js'
 import SparqlEditor from 'rdf-elements/SparqlEditor.js'
 import rdf from 'rdf-ext'
-import { validations as sparqlValidations } from 'shacl-engine/sparql.js'
-import Validator from 'shacl-engine/Validator.js'
+import Engine from 'shacl-engine/Engine.js'
+import { constraints as sparqlConstraints, functions as sparqlFunctions } from 'shacl-engine/sparql.js'
 import coverageCompounds from './lib/coverageCompounds.js'
 import CoverageNetwork from './lib/CoverageNetwork.js'
 import * as example from './lib/example.js'
@@ -97,10 +97,11 @@ class Playground {
       return
     }
 
-    const engine = new Validator(this.state.shape, {
+    const engine = new Engine(this.state.shape, {
       ...this.state.validationSettings,
+      constraints: sparqlConstraints,
       factory: rdf,
-      validations: sparqlValidations
+      functions: sparqlFunctions
     })
 
     const report = await engine.validate({ dataset: this.state.data })
