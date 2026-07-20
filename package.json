@@ -33,7 +33,7 @@
     "rdf-elements": "^0.1.4",
     "rdf-ext": "^2.6.0",
     "shacl-engine": "^1.1.0",
-    "stricter-standard": "^0.3.1",
+    "stricter-standard": "^0.3.2",
     "vite": "^8.1.0"
   }
 }
