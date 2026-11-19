@@ -6,6 +6,6 @@ COPY . .
 RUN npm ci
 RUN npm run build
 
-FROM nginx:1-alpine
+FROM nginx:1.30.7-alpine
 
 COPY --from=builder /build/dist /usr/share/nginx/html
